@@ -17,7 +17,7 @@ export async function fetchRevenuePrisma() {
 export async function fetchLatestInvoicesPrisma() {
   try {
     const data = await prisma.invoices.findMany({
-        take: 10,
+        take: 6,
         orderBy: {
           amount: "desc",
         },
